@@ -1,0 +1,20 @@
+{
+  "extends": "@reactunity/scripts",
+  "jsxImportSource": "react",
+  "jsx": "react",
+  "esModuleInterop": true,
+  "compilerOptions": {
+    "lib": ["dom", "es6"],
+    "baseUrl": "./",
+    "types": [
+      "@reactunity/scripts/main",
+      "@reactunity/scripts/ugui"
+    ]
+  },
+  "files": [
+    "src/index.tsx"
+  ],
+  "include": [
+    "./src"
+  ]
+}

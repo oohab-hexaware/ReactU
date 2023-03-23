@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactUnity.UGUI", "ReactUnity.UGUI.csproj", "{ec1647f5-5f6c-81c5-1d7e-e7430f497a2d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactUnity", "ReactUnity.csproj", "{d1bfd9a5-cedf-087e-53ef-3725fb8795fe}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactUnity.UIToolkit", "ReactUnity.UIToolkit.csproj", "{d361512d-3c75-f0d1-39ab-84907d7daacc}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook.Yoga", "Facebook.Yoga.csproj", "{a99fbe93-1323-67bb-975f-4126aafc8b83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactUnity.Editor", "ReactUnity.Editor.csproj", "{e148180b-717c-eddb-3d51-7dd26cfb72ca}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ec1647f5-5f6c-81c5-1d7e-e7430f497a2d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ec1647f5-5f6c-81c5-1d7e-e7430f497a2d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d1bfd9a5-cedf-087e-53ef-3725fb8795fe}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d1bfd9a5-cedf-087e-53ef-3725fb8795fe}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d361512d-3c75-f0d1-39ab-84907d7daacc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d361512d-3c75-f0d1-39ab-84907d7daacc}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a99fbe93-1323-67bb-975f-4126aafc8b83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a99fbe93-1323-67bb-975f-4126aafc8b83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e148180b-717c-eddb-3d51-7dd26cfb72ca}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e148180b-717c-eddb-3d51-7dd26cfb72ca}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

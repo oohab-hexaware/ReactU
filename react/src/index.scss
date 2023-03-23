@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    background-color: #f5f5f5;
+    box-shadow: 0px 1px 5px #0000001a;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    top:3em;
+    width: 10em;
+    left: 2em;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    top:0.3em;
+    right:1em;
+  }
+  
+  button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .shelf-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    height: 500px; /* added height property */
+    overflow-y: scroll; /* added overflow-y property */
+    top:2em;
+  }
+  
+  .shelf {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .sidebar {
+    position: fixed; /* make the sidebar stay in place when the page is scrolled */
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: normal;
+    bottom: 0;
+    left: 0;
+    width: 350px; /* adjust the width to suit your needs */
+    background-color: #f1f1f1;
+    padding: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a shadow effect for depth */
+    z-index: 1; /* make sure the sidebar appears on top of other elements */
+  }
+  
+  .filter-sort {
+    margin-left: auto;
+    position: absolute;
+    top: 10em;
+    right:1em; 
+    background-color:white;
+    color:black;
+  }
+  .side-button{
+    margin-right: auto;
+    position: absolute;
+    top: 1em;
+    left:0em;  
+    background-color:white;
+    color:black;
+    font-size: 30;
+  }
+  .second-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #eee;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .second-sidebar label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .second-sidebar select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  .close-btn {
+    position: absolute;
+    top:20em;
+    left:2em;
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color:  #eee;
+    background-color:blue;
+    border: none;
+    cursor: pointer;
+  }
+  .close-button {
+    position: absolute;
+    top: 0.5em;
+    right: 0.4em;
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+  }
+  .logout-btn{
+    position: absolute;
+    bottom: 0.5em;
+    left: 0em;
+    padding: 0.5em;
+    color: black;
+    background-color: #eee;
+  } 
+
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    top:3em;
+    width: 10em;
+    left: 2em;
+  }
+  
+  .search-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    bottom:20em;
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    bottom:19.5em;
+    right:1.5em;
+  }
+  
+  .search-container button:hover {
+    background-color: #005599;
+  }
+  select {
+    bottom: 10em;
+    right:5em;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    appearance: none; /* hide default arrow on some browsers */
+    -webkit-appearance: none; /* hide default arrow on some browsers */
+  }
+  
+  /* Style the options */
+  select option {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Style the dropdown arrow */
+  select::after {
+    content: '';
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #333 transparent transparent transparent;
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 10px;
+    pointer-events: auto; /* allow pointer events on the pseudo-element */
+  }
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+  }
+  
+  .slider-track {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+  }
+  
+  .slider-thumb {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #007bff;
+    cursor: pointer;
+  }
+  
+  .slider-thumb:active {
+    transform: scale(1.2) translateX(-50%);
+  }
+  
+  .slider-thumb:focus {
+    outline: none;
+  }
+  
+  
+  
+  
